@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./script.js">
+</head>
+<body>
+        <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">Ecommerce</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <button class="btn" onclick="alert('Login feature coming soon!')">Login</button>
+            <button class="btn" onclick="alert('Register feature coming soon!')">Register</button>
+            <button class="btn" onclick="toggleCart()">Cart (<span id="cart-count">0</span>)</button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION 
+    <section class="hero" id="home">
+        <h1>Welcome to Our Store</h1>
+        <p>Discover amazing products at unbeatable prices. Shop the latest trends in fashion, electronics, and more!</p>
+    </section>
+     -->
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We are committed to bringing you the finest selection of products from around the world. Our mission is to provide exceptional quality, outstanding service, and incredible value. With years of experience in the industry, we've built a reputation for excellence and customer satisfaction. Whether you're looking for the latest fashion trends, cutting-edge electronics, or unique jewelry pieces, we have something special for everyone.</p>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="products" id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- Products will be added by JavaScript -->
+        </div>
+    </section>
+
+    <!-- CART MODAL -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Your Cart</h2>
+                <button class="close-btn" onclick="toggleCart()">&times;</button>
+            </div>
+            <div id="cart-items">
+                <p>Your cart is empty</p>
+            </div>
+            <div class="cart-total">
+                Total: $<span id="cart-total">0.00</span>
+            </div>
+            <button class="btn" style="width: 100%; margin-top: 1rem;" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Made with ❤️ by <a href="#">Haritha</a></p>
+        <p>&copy; 2024 Ecommerce Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

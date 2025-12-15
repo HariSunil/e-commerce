@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart page</title>
+    <link rel="stylesheet" href="./cart.css">
+</head>
+<body>
+        <!-- Header -->
+    <div class="header">
+        <div class="header-content">
+            <div class="logo">Ecommerce</div>
+            <ul class="nav-links">
+                <li><a onclick="showPage('products')">Home</a></li>
+                <li><a onclick="showPage('products')">Products</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="header-buttons">
+                <button class="btn-header">Login</button>
+                <button class="btn-header">Register</button>
+                <button class="btn-header cart-btn" onclick="showPage('cart')">
+                    Cart (<span id="cartCount">0</span>)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Page -->
+    <div id="productsPage" class="page active">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>New Season Arrivals</h1>
+            <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+
+        <!-- Products Section -->
+        <div class="products-section">
+            <h2 class="section-title">Latest Products</h2>
+            <div class="loading">Loading products...</div>
+            <div id="productContainer" class="row"></div>
+        </div>
+    </div>
+
+    <!-- Cart Page -->
+    <div id="cartPage" class="page">
+        <div class="cart-page">
+            <h1>Cart</h1>
+            <div id="cartContent"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Made with ❤️ by <a href="#">AchieversIT</a></p>
+    </div>
+        
+    <script src="./cart.js"></script>
+
+</body>
+</html>
